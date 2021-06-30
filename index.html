@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greek Audo</title>
+    <script>
+        window.onload = () => {
+            let elements = document.getElementsByTagName("a");
+            for (let element in elements) {
+                console.log(elements[element].innerText);
+                if (elements[element].innerText == "Audio")
+                elements[element].innerText = elements[element].href;
+            }
+        }
+
+    </script>
 </head>
 <body>
     <a href="1 Corinthians 01 - Greek.mp3">Audio</a><br>
