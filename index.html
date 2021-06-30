@@ -9,10 +9,11 @@
             let elements = document.getElementsByTagName("a");
             for (let element in elements) {
                 console.log(elements[element].innerText);
-                if (elements[element].innerText == "Audio")
-                elements[element].innerText = elements[element].href;
+                if (elements[element].innerText == "Audio") {
+                    elements[element].innerText = elements[element].href;
+                }
             }
-        }
+        };
 
     </script>
 </head>
